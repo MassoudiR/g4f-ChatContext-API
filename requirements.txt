@@ -2,3 +2,4 @@ g4f[api]
 fastapi
 SQLAlchemy
 uvicorn
+sqlite3
