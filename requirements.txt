@@ -1,3 +1,4 @@
-SQLAlchemy
-fastapi
 g4f[api]
+fastapi
+SQLAlchemy
+uvicorn
