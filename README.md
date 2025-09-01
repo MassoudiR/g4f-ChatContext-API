@@ -19,15 +19,7 @@
 * 🤖 **Multi-Model Support**
 
   * GPT-4, GPT-5 Nano, Mistral, DeepSeek, Gemini, etc.
-* 📜 **History & Stats**
 
-  * Per-user history, session stats, and global system stats.
-* 🔄 **Database Reset (Dev Only)**
-
-  * Drop and recreate tables easily during development.
-* 🌍 **CORS Enabled**
-
-  * API accessible from any frontend (`allow_origins=["*"]`).
 * 📌 **Versioned API**
 
   * All endpoints are prefixed with `/api/v1/` for easy future upgrades.
@@ -154,3 +146,4 @@ curl "http://127.0.0.1:8000/api/v1/chat?session_id=<SESSION_ID>&message=Hello"
 ## 📜 License
 
 MIT License © 2025
+
