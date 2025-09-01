@@ -90,7 +90,7 @@ Interactive docs:
 
 * `GET /api/v1/create_session?user_id=...` → Create new chat session
 * `GET /api/v1/sessions/{user_id}` → List user sessions
-* `POST /api/v1/set_system_prompt` → Set system prompt
+* `GET /api/v1/set_system_prompt` → Set system prompt
 
 ### 🤖 Chat
 
@@ -146,4 +146,5 @@ curl "http://127.0.0.1:8000/api/v1/chat?session_id=<SESSION_ID>&message=Hello"
 ## 📜 License
 
 MIT License © 2025
+
 
