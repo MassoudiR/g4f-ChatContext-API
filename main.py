@@ -60,7 +60,7 @@ def create_session(user_id: str = None, db: Session = Depends(get_db)):
     return {"session_id": new_session.session_id, "user_id": new_session.user_id}
 
 
-@app.post(f"{API_PREFIX}/set_system_prompt")
+@app.get(f"{API_PREFIX}/set_system_prompt")
 def set_system_prompt(session_id: str, prompt: str, db: Session = Depends(get_db)):
     session = db.query(ChatSession).filter(ChatSession.session_id == session_id).first()
     if not session:
@@ -229,3 +229,4 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
