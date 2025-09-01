@@ -7,7 +7,7 @@ from database import Base, engine, get_db
 class User(Base):
     __tablename__ = "users"
 
-    user_id = Column(String, primary_key=True, index=True, default=lambda: uuid.uuid4())
+    user_id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     created_at = Column(DateTime, default=datetime.utcnow)
 
     sessions = relationship("ChatSession", back_populates="user")
